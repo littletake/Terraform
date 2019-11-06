@@ -1,0 +1,13 @@
+# api_inference_serverのみgitに上げる。
+api-fluentd-test/
+mount-test/
+sample/
+serverspec_test/
+sh_file/
+ssh_check_server/
+test/
+voyage-handson/
+accessKeys.csv
+
+.DS_Store
+.idea

@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+{% block content %}
+<h1>Hello</h1>
+    <h3>メールアドレスと名前を送信してください</h3>
+        <form method="post" action="/hello">
+            <input placeholder="名前" name="username" type="text"/>
+            <input placeholder="メール" name="email" type="text"/>
+            <input value="送信" type="submit"/>
+        </form>
+こんにちは。{{ name }}
+{% endblock %}

@@ -1,0 +1,7 @@
+# 除去すべきファイル
+.terraform/
+.DS_Store
+
+*.tfstate
+*.backup
+*.tfvars
