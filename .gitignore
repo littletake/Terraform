@@ -1,9 +1,6 @@
-# api_inference_serverのみgitに上げる。
 sh_file/
-ssh_check_server/
-test/
 voyage-handson/
-accessKeys.csv
 
+accessKeys.csv
 .DS_Store
 .idea
