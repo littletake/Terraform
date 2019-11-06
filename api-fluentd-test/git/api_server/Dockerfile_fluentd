@@ -1,0 +1,4 @@
+FROM fluent/fluentd:latest
+
+# もしプラグインが必要であったらここでインストールする。
+# RUN gem install

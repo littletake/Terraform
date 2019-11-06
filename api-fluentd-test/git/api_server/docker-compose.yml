@@ -1,0 +1,29 @@
+version: '3'
+services:
+  apiserver:
+    build:
+      context: .
+      dockerfile: Dockerfile_api
+    container_name: api_container
+    ports:
+      - "8080:8080"
+    volumes:
+      - /Users/take-pc-6/documents/documents/workspace/aws/terraform/api-fluentd-test/api_server:/myvol
+    logging:
+      driver: fluentd
+      options:
+        fluentd-address: "0.0.0.0:24220"
+        tag: "docker.{{.Name}}"
+    depends_on:
+      - fluentd
+
+  fluentd:
+    build:
+      context: .
+      dockerfile: Dockerfile_fluentd
+    container_name: fluentd_container
+    ports:
+      - "24220:24220"
+      - "24220:24220/udp"
+    volumes:
+      - /Users/take-pc-6/documents/documents/workspace/aws/terraform/api-fluentd-test/api_server/fluentd:/fluentd/etc

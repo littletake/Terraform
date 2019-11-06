@@ -1,5 +1,4 @@
 # api_inference_serverのみgitに上げる。
-api-fluentd-test/
 mount-test/
 sample/
 serverspec_test/
