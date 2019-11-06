@@ -1,7 +1,4 @@
 # api_inference_serverのみgitに上げる。
-mount-test/
-sample/
-serverspec_test/
 sh_file/
 ssh_check_server/
 test/
